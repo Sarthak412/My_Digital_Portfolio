@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +21,12 @@
     position: fixed;
     z-index: 5;
     width: 100%;
+    padding: 12px 0;
+    background: #1b1b1b;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
     padding: 10px 0;
     background: #1b1b1b;
 }
@@ -49,9 +59,141 @@
 }
 
 .menu-list li a:hover{
-    background: #3b3b3b;
+    background: #272727;
 }
 
 .menu-list li{
     list-style: none;
+}
+
+/* Banner section */
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(/images/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-left: 105px;
+}
+
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 105px;
+}
+
+.btn{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 500;
+    border: solid rgb(255, 35, 120);
+    background:transparent;
+    border-radius: 1rem;
+    margin-left: 105px;
+}
+
+.btn:hover{
+    background-color: rgb(172, 0, 66);
+    transition: 0.5s;
+}
+
+/* Burger/ toggle button */
+
+.icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media(max-width: 750px){
+    .icon{
+        display: block;
+    }
+
+    .icon.hide{
+        display: none;
+    }
+
+    .navbar .menu-list{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu-list.active{
+        left: 0%;
+    }
+
+    .navbar .menu-list li{
+        margin-top: 45px;
+    }
+    
+    .navbar .menu-list li a{
+        font-size: 20px;
+    }
+
+    .banner h2{
+        font-size: 3em;
+        color: #fff;
+        font-weight: 500;
+        line-height: 1.5em;
+        margin-left: 85px;
+    }
+    
+    .banner h2 span{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    
+    .banner h3{
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        margin-left: 85px;
+    }
+
+    .btn{
+        margin-left: 85px;
+    }
+
 }
