@@ -136,6 +136,111 @@ html{
     top: 20px;
 }
 
+/* more about me section */
+
+.about{
+    background-color:#1b1b1b; 
+    padding-top: 28px;
+    padding-bottom: 35px;
+}
+  
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+    color: rgb(240, 240, 240);
+    font-size: larger;
+}
+  
+.heading h2{
+    font-weight: 600;
+    font-size: 38px;
+}
+  
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+  
+.contentBx h4{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: rgb(228, 228, 228);
+}
+  
+.contentBx p{
+    font-size: 25px;
+    color: rgb(243, 243, 243);
+}
+
+/* Footer section */
+.footer{
+    background-color: #1b1b1b;
+    /* padding: 40px 0; */
+    padding-bottom: 40px;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .social a{
+    font-size: 35px;
+    color: #f7f7f7;
+    text-decoration: none;
+    width: 50px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.social a:hover{
+    color: rgb(245, 91, 150);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.footer ul li{
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+}
+
+.footer ul li a:hover{
+    color: rgb(245, 91, 150);
+}
+
+.heading-3{
+    width: 100%;
+    text-align: center;
+    padding-top: 28px;
+    margin-bottom: 35px;
+    color: #f7f7f7;
+    font-size: large;
+}
+
+.heading-3 h3{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+
 @media(max-width: 750px){
     .icon{
         display: block;
@@ -194,6 +299,24 @@ html{
 
     .btn{
         margin-left: 85px;
+    }
+    
+    /* About me section */
+    .heading h2{
+        font-size: 24px;
+    }
+
+    .contentBx p{
+        font-size: 20px;
+        color: rgb(243, 243, 243);
+    }
+
+    .heading-3 h3{
+        font-size: 24px;
+    }
+
+    .list li a{
+        font-size: 19px;
     }
 
 }
