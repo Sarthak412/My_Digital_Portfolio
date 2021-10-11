@@ -239,9 +239,33 @@ html{
     font-size: 30px;
 }
 
+.skills{
+    margin: 20px;
+    margin-top: 45px;
+    column-width: 400px;
+    column-gap: 20px;
+    display: flexbox;
+    /* border: 1px solid green; */
+    margin-left: 50px;
+}
 
+.skill-list{
+    margin: 10px;
+    padding: 8px;
+    /* border: 1px solid red; */
+}
+
+
+.skill-list li{
+    color: #fff;
+}
 
 @media(max-width: 750px){
+
+    body.disabledScroll{
+        overflow: hidden;
+    }
+
     .icon{
         display: block;
     }
